@@ -9,7 +9,7 @@ function checkjogo(id) {
 
 
     if (opt == "transp.png") {
-        document.getElementById(id).src = "img/" + player + ".png";
+        document.getElementById(id).src = player + ".png";
         numJog++;
         
         if (player == "X") {
@@ -200,7 +200,7 @@ function restartGame() {
 
     for (let i = 1; i <= 3; i++) {
         for (let j = 1; j <= 3; j++) {
-            document.getElementById(`${String.fromCharCode(96 + i)}${j}`).src = "img/transp.png";
+            document.getElementById(`${String.fromCharCode(96 + i)}${j}`).src = "transp.png";
         }
     }
 
